@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #DBE7C9; 
+    color: #333; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    min-height: 100vh; 
+}
+
+header {
+    background-color: #789461; 
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-grow: 1; 
+}
+
+.mensaje {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.corazon {
+    color: green; 
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+.book {
+    position: relative;
+    border-radius: 10px;
+    width: 220px;
+    height: 300px;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 12px #000;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.cover {
+    top: 0;
+    position: absolute;
+    background-color: #789461;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    transform-origin: 0;
+    box-shadow: 1px 1px 12px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book:hover .cover {
+    transition: all 0.5s;
+    transform: rotateY(-80deg);
+}
+
+p {
+    font-size: 20px;
+    font-weight: bolder;
+}
+#bottone1 {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 9px;
+    background: #d5f365;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+   }
+   
+   #bottone1:hover {
+    box-shadow: 7px 5px 56px -14px #C3D900;
+   }
+   
+   #bottone1:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #C3D900;
+   }
+.lista {
+  margin: 20px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #50623A; 
+    color: white;
+}
+@media (max-width: 400px) {
+    main {
+        padding: 10px;
+    }
+
+    .book {
+        max-width: 100%; 
+        height: auto; 
+    }
+}

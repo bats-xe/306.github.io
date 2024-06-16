@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style2.css">
+    <title>Feliz Cumple Yaz</title>
+</head>
+<body>
+    <header>
+        <h1>¡Feliz Cumple, Yaz!</h1>
+    </header>
+    <main>
+        <section class="mensaje">
+            <p>💚Holitaaaaa, feliz cumpleaños. Sabes que te aprecio demasiado <span class="corazon">dramatica💚</span> </p>
+            <p>Pásala lindo este día, disfruta, siente, sonríe, pero más que nada, no te tires abajo del Urquiza por favor, tenemos una tarde pendiente pipipi</p>
+        </section>
+    </main>
+    <nav>
+        <div class="book">
+            <ul>
+                <li>pipipi</li>
+                <li>trenes</li>
+                <li>taylor</li>
+                <li>vino blanco</li>
+                <li>verde</li>
+                <li>bares</li>
+                <li>cafe</li>
+                <li>mates</li>
+                <li>estrellas</li>
+                <li>rock</li>
+                <li>centinelas de la luz</li>
+            </ul>
+            <div class="cover">
+                <p>💚cositas que me recuerdan a vos💚</p>
+            </div>
+        </div>
+    </nav>
+    <nav class="lista">
+        <button id="bottone1"><strong>pipipi</strong></button>
+    </nav>
+    <footer>
+        <p>con cariño ale</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+        });
+
+        document.getElementById('bottone1').addEventListener('click', function() {
+            window.location.href = 'https://open.spotify.com/playlist/5xFlDPkaw1zxwwxm2pObRX?si=2a1c1a480eba4a9d';
+        });
+    </script>
+</body>
+</html>

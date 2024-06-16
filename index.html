@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>?</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('.form');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+
+                const name = document.getElementById('name').value.trim().toLowerCase();
+                const birthdate = document.getElementById('birthdate').value;
+
+                
+                if (name === 'yaz' && birthdate === '2004-06-30') {
+                    window.location.href = 'index2.html';
+                } else {
+                   
+                    alert('El nombre o la fecha de nacimiento no coinciden.');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <div class="logo-container">
+            ???
+        </div>
+        <form class="form">
+            <div class="form-group">
+                <label for="name">nombre</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+  
+            <div class="form-group">
+                <label for="birthdate">cumple?</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+  
+            <button class="form-submit-btn" type="submit">cargar</button>
+        </form>
+    </div>
+</body>
+</html>
